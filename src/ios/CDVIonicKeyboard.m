@@ -203,7 +203,7 @@ typedef enum : NSUInteger {
         }
         case ResizeIonic:
         {
-            NSString *js = [NSString stringWithFormat:@"Keyboard.fireOnResize(%d, %d, document.querySelector('ion-app'));",
+            NSString *js = [NSString stringWithFormat:@"Keyboard.fireOnResize(%d, %d, document.querySelector('ion-nav-view'));",
                             _paddingBottom, (int)f.size.height];
             [self.commandDelegate evalJs:js];
             break;
